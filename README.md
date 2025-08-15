@@ -10,7 +10,7 @@ pinned: false
 # PastFm
 
 <div align="center">
-  <img src="https://arpy8-pastfm-backend.hf.space/live" alt="PastFm Live Banner" />
+  <img src="https://aawhan0-gitscrobble-v0.hf.space/live" alt="PastFm Live Banner" />
   <p><i>Last.fm Scrobble Card for GitHub Profile READMEs</i></p>
 </div>
 

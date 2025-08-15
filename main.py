@@ -2,7 +2,7 @@
 
 import uvicorn
 from app.api import create_app
-from config import config
+from gitscrobble_config import config
 
 app = create_app()
 

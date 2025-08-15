@@ -5,13 +5,13 @@ import logging
 from pathlib import Path
 from logging.handlers import RotatingFileHandler
 
-import config
-from config import BASE_DIR
+import gitscrobble_config
+from gitscrobble_config import BASE_DIR
 
 
 def setup_logger():
     """Configure application-wide logging."""
-    log_level = logging.DEBUG if config.config.debug else logging.INFO
+    log_level = logging.DEBUG if gitscrobble_config.config.debug else logging.INFO
 
     logs_dir = BASE_DIR / "logs"
     logs_dir.mkdir(exist_ok=True)

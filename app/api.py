@@ -11,7 +11,7 @@ from fastapi.templating import Jinja2Templates
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
-from config import config, BASE_DIR
+from gitscrobble_config import config, BASE_DIR
 from utils import generate_css_bar, generate_bar_elements, LastFmClient, logger
 
 

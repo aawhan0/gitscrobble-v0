@@ -5,7 +5,7 @@ import base64
 import requests
 from typing import Dict, Optional, Any
 
-from config import config
+from gitscrobble_config import config
 from utils.logging_config import logger
 
 

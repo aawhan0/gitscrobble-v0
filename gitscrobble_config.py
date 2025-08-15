@@ -24,7 +24,7 @@ class AppConfig(BaseModel):
     """Application configuration."""
 
     lastfm: LastFmConfig = LastFmConfig()
-    default_user: str = "arpy8"
+    default_user: str = "aaawhan"
     default_color: str = "f70000"
     num_bars: int = 75
     debug: bool = bool(os.getenv("DEBUG", "False").lower() == "true")

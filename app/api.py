@@ -47,12 +47,12 @@ def create_app() -> FastAPI:
     @app.get("/")
     async def root() -> RedirectResponse:
         """Redirect to project GitHub page."""
-        return RedirectResponse(url="https://github.com/arpy8/PastFm")
+        return RedirectResponse(url="https://github.com/aawhan0")
 
     @app.get("/redirect")
     async def redirect() -> RedirectResponse:
         """Redirect to project repository."""
-        return RedirectResponse(url="https://github.com/arpy8/PastFm")
+        return RedirectResponse(url="https://github.com/aawhan0")
 
     @app.get("/live")
     async def live_banner(

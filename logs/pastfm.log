@@ -1,0 +1,4 @@
+2025-08-15 12:02:49,443 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-15 12:06:46,826 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-15 12:06:49,469 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-15 12:06:54,322 - asyncio - DEBUG - Using selector: SelectSelector

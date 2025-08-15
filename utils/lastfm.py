@@ -74,31 +74,45 @@ class LastFmClient:
             return None
 
     def get_current_track(self) -> Optional[Dict[str, Any]]:
-        """
-        Fetch user's current or last played track from LastFM.
-
-        Returns:
-            Dictionary with track details or None if failed
-        """
+        """Fetch user's current or last played track from LastFM."""
         try:
-            scrobble_url = self._build_url("user.getRecentTracks", extended=True)
+            url = self._build_url("user.getRecentTracks", extended=True)
+            logger.info(f"Fetching from URL: {url}")
 
-            status_url = self._build_url("User.getrecenttracks")
+            response = requests.get(url, timeout=10)
+            response.raise_for_status()
+            data = response.json()
 
-            scrobble_response = requests.get(scrobble_url, timeout=10)
-            status_response = requests.get(status_url, timeout=10)
+            # Debug: print the full API response so we see its structure
+            print("=== DEBUG: LastFM API Response ===")
+            print(json.dumps(data, indent=2))
 
-            scrobble_data = json.loads(scrobble_response.text)["recenttracks"]["track"][
-                0
-            ]
-            status_data = json.loads(status_response.text)["recenttracks"]["track"][0]
+            tracks = data.get("recenttracks", {}).get("track", [])
+            if not tracks:
+                logger.error("No tracks found in API response")
+                return None
 
-            artist = status_data["artist"]["#text"]
-            name = status_data["name"]
-            is_playing = "@attr" in status_data
-            track_url = status_data["url"]
+            track = tracks[0]
 
-            image_url = scrobble_data.get("image", [])[-1].get("#text", "")
+            # Artist extraction for extended and non-extended modes
+            artist_info = track.get("artist")
+            if isinstance(artist_info, dict):
+                artist = artist_info.get("name") or artist_info.get("#text", "")
+            else:
+                artist = str(artist_info) if artist_info else ""
+
+            name = track.get("name", "")
+            is_playing = "@attr" in track and track["@attr"].get("nowplaying") == "true"
+            track_url = track.get("url", "")
+
+            image_url = ""
+            if track.get("image") and isinstance(track["image"], list):
+                # Find the largest image with "#text"
+                for img in reversed(track["image"]):
+                    if img.get("#text"):
+                        image_url = img["#text"]
+                        break
+
             thumbnail = self.get_base64_image(image_url)
 
             return {

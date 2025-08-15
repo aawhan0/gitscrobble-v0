@@ -18,3 +18,39 @@
 2025-08-15 14:37:24,463 - asyncio - DEBUG - Using selector: SelectSelector
 2025-08-15 14:37:30,123 - asyncio - DEBUG - Using selector: SelectSelector
 2025-08-15 14:37:32,163 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-15 14:47:22,906 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-15 14:47:41,858 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): ws.audioscrobbler.com:443
+2025-08-15 14:47:41,928 - root - ERROR - Error fetching song details: HTTPSConnectionPool(host='ws.audioscrobbler.com', port=443): Max retries exceeded with url: /2.0/?method=user.getRecentTracks&user=aaawhan&api_key=6d74866c92c38bf9cfdd50d9ead806b3&format=json&limit=1&extended=1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002894926A390>: Failed to resolve 'ws.audioscrobbler.com' ([Errno 11001] getaddrinfo failed)"))
+2025-08-15 14:51:46,995 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-15 14:51:49,243 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-15 14:52:39,868 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-15 14:52:55,746 - root - INFO - Fetching from URL: https://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=aaawhan&api_key=6d74866c92c38bf9cfdd50d9ead806b3&format=json&limit=1&extended=1
+2025-08-15 14:52:55,750 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): ws.audioscrobbler.com:443
+2025-08-15 14:52:56,341 - urllib3.connectionpool - DEBUG - https://ws.audioscrobbler.com:443 "GET /2.0/?method=user.getRecentTracks&user=aaawhan&api_key=6d74866c92c38bf9cfdd50d9ead806b3&format=json&limit=1&extended=1 HTTP/11" 200 2629
+2025-08-15 14:52:56,342 - root - ERROR - Error fetching song details: '#text'
+2025-08-15 14:52:57,552 - root - INFO - Fetching from URL: https://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=aaawhan&api_key=6d74866c92c38bf9cfdd50d9ead806b3&format=json&limit=1&extended=1
+2025-08-15 14:52:57,554 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): ws.audioscrobbler.com:443
+2025-08-15 14:52:58,026 - urllib3.connectionpool - DEBUG - https://ws.audioscrobbler.com:443 "GET /2.0/?method=user.getRecentTracks&user=aaawhan&api_key=6d74866c92c38bf9cfdd50d9ead806b3&format=json&limit=1&extended=1 HTTP/11" 200 2629
+2025-08-15 14:52:58,027 - root - ERROR - Error fetching song details: '#text'
+2025-08-15 14:54:50,582 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-15 14:58:19,652 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-15 14:58:24,001 - root - INFO - Fetching from URL: https://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=aaawhan&api_key=6d74866c92c38bf9cfdd50d9ead806b3&format=json&limit=1&extended=1
+2025-08-15 14:58:24,005 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): ws.audioscrobbler.com:443
+2025-08-15 14:58:24,878 - urllib3.connectionpool - DEBUG - https://ws.audioscrobbler.com:443 "GET /2.0/?method=user.getRecentTracks&user=aaawhan&api_key=6d74866c92c38bf9cfdd50d9ead806b3&format=json&limit=1&extended=1 HTTP/11" 200 2558
+2025-08-15 14:58:24,881 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): lastfm.freetls.fastly.net:443
+2025-08-15 14:58:26,528 - urllib3.connectionpool - DEBUG - https://lastfm.freetls.fastly.net:443 "GET /i/u/300x300/fb45812ecfade7962bbea1fcb3596aae.jpg HTTP/11" 200 11278
+2025-08-15 14:58:27,058 - root - INFO - Fetching from URL: https://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=aaawhan&api_key=6d74866c92c38bf9cfdd50d9ead806b3&format=json&limit=1&extended=1
+2025-08-15 14:58:27,059 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): ws.audioscrobbler.com:443
+2025-08-15 14:58:27,535 - urllib3.connectionpool - DEBUG - https://ws.audioscrobbler.com:443 "GET /2.0/?method=user.getRecentTracks&user=aaawhan&api_key=6d74866c92c38bf9cfdd50d9ead806b3&format=json&limit=1&extended=1 HTTP/11" 200 2558
+2025-08-15 14:58:27,538 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): lastfm.freetls.fastly.net:443
+2025-08-15 14:58:27,654 - urllib3.connectionpool - DEBUG - https://lastfm.freetls.fastly.net:443 "GET /i/u/300x300/fb45812ecfade7962bbea1fcb3596aae.jpg HTTP/11" 200 11278
+2025-08-15 14:58:29,713 - root - INFO - Fetching from URL: https://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=aaawhan&api_key=6d74866c92c38bf9cfdd50d9ead806b3&format=json&limit=1&extended=1
+2025-08-15 14:58:29,715 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): ws.audioscrobbler.com:443
+2025-08-15 14:58:30,248 - urllib3.connectionpool - DEBUG - https://ws.audioscrobbler.com:443 "GET /2.0/?method=user.getRecentTracks&user=aaawhan&api_key=6d74866c92c38bf9cfdd50d9ead806b3&format=json&limit=1&extended=1 HTTP/11" 200 2558
+2025-08-15 14:58:30,251 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): lastfm.freetls.fastly.net:443
+2025-08-15 14:58:30,384 - urllib3.connectionpool - DEBUG - https://lastfm.freetls.fastly.net:443 "GET /i/u/300x300/fb45812ecfade7962bbea1fcb3596aae.jpg HTTP/11" 200 11278
+2025-08-15 14:59:01,002 - root - INFO - Fetching from URL: https://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=aaawhan&api_key=6d74866c92c38bf9cfdd50d9ead806b3&format=json&limit=1&extended=1
+2025-08-15 14:59:01,004 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): ws.audioscrobbler.com:443
+2025-08-15 14:59:01,721 - urllib3.connectionpool - DEBUG - https://ws.audioscrobbler.com:443 "GET /2.0/?method=user.getRecentTracks&user=aaawhan&api_key=6d74866c92c38bf9cfdd50d9ead806b3&format=json&limit=1&extended=1 HTTP/11" 200 2579
+2025-08-15 14:59:01,723 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): lastfm.freetls.fastly.net:443
+2025-08-15 14:59:02,256 - urllib3.connectionpool - DEBUG - https://lastfm.freetls.fastly.net:443 "GET /i/u/300x300/42d971a00a049392acc5b29c23fd7914.jpg HTTP/11" 200 5899

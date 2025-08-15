@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 from pydantic import BaseModel, Field
 
 BASE_DIR = Path(__file__).parent
-load_dotenv()
+load_dotenv(dotenv_path=BASE_DIR / ".env")
 
 
 class LastFmConfig(BaseModel):

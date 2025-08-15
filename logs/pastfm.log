@@ -10,3 +10,11 @@
 2025-08-15 14:31:55,230 - asyncio - DEBUG - Using selector: SelectSelector
 2025-08-15 14:32:05,887 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): ws.audioscrobbler.com:443
 2025-08-15 14:32:06,005 - root - ERROR - Error fetching song details: HTTPSConnectionPool(host='ws.audioscrobbler.com', port=443): Max retries exceeded with url: /2.0/?method=user.getRecentTracks&user=aaawhan&api_key=6d74866c92c38bf9cfdd50d9ead806b3&format=json&limit=1&extended=1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000217772329D0>: Failed to resolve 'ws.audioscrobbler.com' ([Errno 11001] getaddrinfo failed)"))
+2025-08-15 14:37:08,317 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-15 14:37:10,575 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-15 14:37:12,652 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-15 14:37:18,436 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-15 14:37:22,366 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-15 14:37:24,463 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-15 14:37:30,123 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-15 14:37:32,163 - asyncio - DEBUG - Using selector: SelectSelector
